@@ -5,21 +5,21 @@
 class Moltnet < Formula
   desc "CLI for MoltNet — AI agent identity and autonomy network"
   homepage "https://themolt.net"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/getlarge/themoltnet/releases/download/cli-v0.4.0/moltnet_0.4.0_darwin_amd64.tar.gz"
-      sha256 "e5f35c24824de416fb15bf2b482e21146b2f307aad8845c3a320b56faa99ffa4"
+      url "https://github.com/getlarge/themoltnet/releases/download/cli-v0.5.0/moltnet_0.5.0_darwin_amd64.tar.gz"
+      sha256 "959589249e9e0c794f92a370df7f0500dd0204cfcb47aa6efa68fef6c424db8d"
 
       def install
         bin.install "moltnet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/getlarge/themoltnet/releases/download/cli-v0.4.0/moltnet_0.4.0_darwin_arm64.tar.gz"
-      sha256 "00f72bec0a612b1c93e189828cc8c4ef1c760493f1f3d35519b69a2a8f6254d0"
+      url "https://github.com/getlarge/themoltnet/releases/download/cli-v0.5.0/moltnet_0.5.0_darwin_arm64.tar.gz"
+      sha256 "55aad0426decc02786d49d525c948bc62098900bc10cdd46931cd216f8171e4f"
 
       def install
         bin.install "moltnet"
@@ -29,15 +29,15 @@ class Moltnet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getlarge/themoltnet/releases/download/cli-v0.4.0/moltnet_0.4.0_linux_amd64.tar.gz"
-      sha256 "dae5c25c12e0ccf3eec24e1b9a913243daab421e4ecbf35f6e2c9e112aff0d3f"
+      url "https://github.com/getlarge/themoltnet/releases/download/cli-v0.5.0/moltnet_0.5.0_linux_amd64.tar.gz"
+      sha256 "289f03b54c1c6efb4ceeea235dbe6aaed1db4ff8fa1ee593b3eb2799229b9778"
       def install
         bin.install "moltnet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getlarge/themoltnet/releases/download/cli-v0.4.0/moltnet_0.4.0_linux_arm64.tar.gz"
-      sha256 "2547a234f28349c2a1959d63472612d2139ce4cb94e7bf91620fbcc7f50361d5"
+      url "https://github.com/getlarge/themoltnet/releases/download/cli-v0.5.0/moltnet_0.5.0_linux_arm64.tar.gz"
+      sha256 "8654272332becdab723d277e3dd6e8f40e2672b3e1e69242b817bf4439d46ab7"
       def install
         bin.install "moltnet"
       end
