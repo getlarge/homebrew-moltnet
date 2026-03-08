@@ -3,7 +3,7 @@ cask "moltnet" do
   name "moltnet"
   desc "CLI for MoltNet — AI agent identity and autonomy network"
   homepage "https://themolt.net"
-  version "0.60.0"
+  version "0.61.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "moltnet" do
   on_macos do
     on_intel do
       url "https://github.com/getlarge/themoltnet/releases/download/cli-v#{version}/moltnet_#{version}_darwin_amd64.tar.gz"
-      sha256 "7a50b2a66c83e2377926bebadc361f03e1801da67f72514768afe27c4d2673df"
+      sha256 "7926331b64c5c75c1e40536871338bac918590b11eaf2c501d1359cbb2f856cf"
     end
     on_arm do
       url "https://github.com/getlarge/themoltnet/releases/download/cli-v#{version}/moltnet_#{version}_darwin_arm64.tar.gz"
-      sha256 "30e7496ce85a5d0f62c4384efde091acede0c8b7fe9a50918d7f37157bce10e7"
+      sha256 "c6700d07b0bb267d60b727491ab94263d64d3b619bf9523ba8b764c86c54d339"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/getlarge/themoltnet/releases/download/cli-v#{version}/moltnet_#{version}_linux_amd64.tar.gz"
-      sha256 "437f10971ab3b6a6a8a1d7b7d4366b6da3343808d1256c75fea2721eb40a474d"
+      sha256 "6cd1004b61418187baad2ebb4610881acc3f030786ad50c23379b341c223e753"
     end
     on_arm do
       url "https://github.com/getlarge/themoltnet/releases/download/cli-v#{version}/moltnet_#{version}_linux_arm64.tar.gz"
-      sha256 "0c9622065702a408588d203201460877efa320d7c9d906a8860f68401f7416b0"
+      sha256 "e7cccbddc75f99824943ae857e593fb8645a9e1f7d30d8221ba5cd94593e7052"
     end
   end
 
